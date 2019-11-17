@@ -11,15 +11,17 @@ namespace Markdown.Grammar
         {
             base.Init(context, treeNode);
             this.AsString = treeNode.Token.Text;
-            this.Text = AsString;
+            this.Text = AsString.Replace("\"","");
         }
 
         public override void AcceptVisitor(IAstVisitor visitor)
         {
+            if(Parent is RootAst)
             visitor.BeginVisit(this);
             if(visitor is IAstWriteableVisitor writeableVisitor)
                 writeableVisitor.Write(Text);
-            visitor.EndVisit(this);
+            if (Parent is RootAst)
+                visitor.EndVisit(this);
         }
     }
 }

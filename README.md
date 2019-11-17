@@ -36,46 +36,28 @@ You get this result
 
 ```html
 <div>
+  <h1>H1 Heading</h1>
   <h1>
-    <p>"H1 Heading"</p>
+    <u>H1 undescore heading</u>
   </h1>
-  <h1>
-    <u>
-      <p>"H1 undescore heading"</p>
-    </u>
-  </h1>
-  <h2>
-    <p>"H2 Heading"</p>
-  </h2>
-  <b>
-    <p>"This is bold text"</p>
-  </b>
-  <p>"and this is regular text"</p>
-  <p>"Following three items should be in a list, this is plaintext"</p>
+  <h2>H2 Heading</h2>
+  <b>This is bold text</b>
+  <p>and this is regular text</p>
+  <p>Following three items should be in a list, this is plaintext</p>
   <ul>
+    <li>Plaintext list item</li>
     <li>
-      <p>"Plaintext list item"</p>
-    </li>
-    <li>
-      <b>
-        <p>"Bold List item"</p>
-      </b>
+      <b>Bold List item</b>
     </li>
     <li>
       <u>
-        <b>
-          <p>"Underscore bold list item"</p>
-        </b>
+        <b>Underscore bold list item</b>
       </u>
     </li>
     <li>
-      <u>
-        <p>"Underscore  list item"</p>
-      </u>
+      <u>Underscore  list item</u>
     </li>
   </ul>
-  <h1>
-    <p>"This is heading again"</p>
-  </h1>
+  <h1>This is heading again</h1>
 </div>
 ```

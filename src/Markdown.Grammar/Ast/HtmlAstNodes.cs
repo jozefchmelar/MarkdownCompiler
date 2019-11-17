@@ -1,4 +1,7 @@
-﻿namespace Markdown.Grammar
+﻿using Irony.Ast;
+using Irony.Parsing;
+
+namespace Markdown.Grammar
 {
     public class BoldAst : BaseAst
     {
@@ -16,6 +19,11 @@
 
     public class H1Ast : BaseAst
     {
+        public override void Init(AstContext context, ParseTreeNode treeNode)
+        {
+            base.Init(context, treeNode);
+        }
+
         public override string StartTag => "<h1>";
     }
     public class H2Ast : BaseAst
@@ -26,10 +34,4 @@
     {
         public override string StartTag => "<h3>";
     }
-
-    public class RootAst : BaseAst
-    {
-        public override string StartTag => "<div>";
-    }
-
 }

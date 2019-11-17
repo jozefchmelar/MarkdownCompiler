@@ -53,7 +53,7 @@ namespace Markdown.Grammar.Test
             x.AcceptVisitor(visitor);
             Console.WriteLine(visitor.CompiledHtml);
             //assert
-            Assert.AreEqual(visitor.CompiledHtml,File.ReadAllText( @"..\..\..\compiledMarkDown.txt"));
+            Assert.AreEqual(visitor.CompiledHtml, File.ReadAllText(@"..\..\..\compiledMarkDown.txt"));
             Assert.NotNull(parseTree);
         }
 

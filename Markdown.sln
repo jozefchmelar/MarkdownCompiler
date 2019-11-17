@@ -22,9 +22,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CC353BFC-26CB-4C50-8C08-0E00D4B7859A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{CDD3C3E4-6376-4949-A26C-047EC4073351}"
-	ProjectSection(SolutionItems) = preProject
-		src\Markdown.Grammar\Visitors\HtmlConsoleVisitor.cs = src\Markdown.Grammar\Visitors\HtmlConsoleVisitor.cs
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Markdown.Grammar.Test", "test\Markdown.Grammar.Test\Markdown.Grammar.Test.csproj", "{49571447-BF26-40D1-B3C7-664CF11BBEB2}"
 EndProject
