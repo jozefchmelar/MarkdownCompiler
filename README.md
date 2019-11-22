@@ -1,6 +1,6 @@
 # My very own markdown compiler!
 
-It's my very own and very first compiler
+It's my very own and very first compiler. Also my first [medium article](https://medium.com/@Jozefchmelar/how-i-built-a-simple-compiler-markdown-to-html-4da63dc79a94?sk=237f0a7bdf9314f73adf8818f79465fa)
 
 It takes my very poor copy of markdown which supports
 ```
