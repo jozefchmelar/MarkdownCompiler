@@ -1,0 +1,69 @@
+﻿@page "/";
+@inject HttpClient Http
+<div class='container'>
+    <div class='jumbotron'>
+
+        <h1>TinyMarkdown Compiler</h1>
+        <div>
+            <p class='text'>
+                Full code <a href="https://github.com/jozefchmelar/MarkdownCompiler">here</a>
+                by <a href="https://jozefchmelar.com/">Jozef Chmelar</a>
+            </p>
+            <p>
+                Learn more about how compilers work : <a href="https://en.wikipedia.org/wiki/Abstract_syntax_tree">AST</a> ,<a href="https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form">BNF</a>, <a href="https://en.wikipedia.org/wiki/Parse_tree">Parse tree</a>, <a href="https://en.wikipedia.org/wiki/Lexical_analysis">Lexer</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Container for grid layout (12 cells) -->
+<div class='container'>
+    <div class='row well'>
+        <div class='col-md-4 col-sm-1'>
+            <div class="form-group">
+                <div style="display: flex; flex-flow: row; justify-content: space-between; ">
+                    <h3>TinyMarkdown</h3>
+                    <button class="btn-primary" @onclick="@Compile">Compile</button>
+                </div>
+                <textarea id="markdownInput" class="form-control rounded-0" @bind="@Input" rows="@RowCount"></textarea>
+            </div>
+        </div>
+        <div class='col-md-4 col-sm-1'>
+            <div class="form-group">
+                <h3>Output</h3>
+                <textarea class="form-control rounded-0" @bind="@Output" rows="@RowCount"></textarea>
+            </div>
+        </div>
+        <div class='col-md-4 col-sm-1'>
+            <div class="form-group">
+                <h3>Render</h3>
+                <div>
+                    @((MarkupString) @Output)
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+@code{
+
+    [Inject]
+    private Markdown.Blazor.Controller.MarkdownController MarkdownController { get; set; }
+    public string Input { get; set; }
+    public string Output { get; set; }
+    public int RowCount { get; set; } = 20;
+    
+    private void Compile()
+    {
+        Output = MarkdownController.ConvertToHtml(Input);
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var result= await Http.GetAsync("sample-data/rawMarkDown.txt");
+        Console.WriteLine(result);
+        Input = await result.Content.ReadAsStringAsync();
+    }
+}

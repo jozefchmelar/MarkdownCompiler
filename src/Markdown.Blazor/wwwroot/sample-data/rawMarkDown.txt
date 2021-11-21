@@ -1,0 +1,9 @@
+﻿#"Compile ME !"
+#_"You can even edit the output!"_
+##"H2 Heading is the same as MD"
+*"This is bold text"* "and this is regular text. It needs to be in quotes"
+"Following three items should be in a list, this is plaintext"
+- "Plaintext list item"
+- *"Bold List item"*
+- _*"Underscore bold list item"*_
+- _"Underscore  list item"_

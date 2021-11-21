@@ -1,0 +1,10 @@
+﻿#"H1 Heading"
+#_"H1 undescore heading"_
+##"H2 Heading"
+*"This is bold text"* "and this is regular text"
+"Following three items should be in a list, this is plaintext"
+- "Plaintext list item"
+- *"Bold List item"*
+- _*"Underscore bold list item"*_
+- _"Underscore  list item"_
+#"This is heading again"

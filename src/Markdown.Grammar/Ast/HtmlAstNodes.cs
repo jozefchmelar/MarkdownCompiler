@@ -19,11 +19,6 @@ namespace Markdown.Grammar
 
     public class H1Ast : BaseAst
     {
-        public override void Init(AstContext context, ParseTreeNode treeNode)
-        {
-            base.Init(context, treeNode);
-        }
-
         public override string StartTag => "<h1>";
     }
     public class H2Ast : BaseAst
