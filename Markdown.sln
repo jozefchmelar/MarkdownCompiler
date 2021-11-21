@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.902
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "010.Irony", "src\Irony\Irony\010.Irony.csproj", "{75DFC090-56B5-42D4-803D-FDFDB422F6CD}"
 EndProject
@@ -25,7 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{CDD3C3E4-6
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Markdown.Grammar.Test", "test\Markdown.Grammar.Test\Markdown.Grammar.Test.csproj", "{49571447-BF26-40D1-B3C7-664CF11BBEB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Markdown.Blazor", "src\Markdown.Blazor\Markdown.Blazor.csproj", "{1B2EF66E-525E-4EEC-9FE0-D2CD1FF9DD23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Markdown.Blazor", "src\Markdown.Blazor\Markdown.Blazor.csproj", "{1B2EF66E-525E-4EEC-9FE0-D2CD1FF9DD23}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,7 +79,7 @@ Global
 		{0C511E5F-4E71-4956-A4F5-A59CA45B6F65} = {CC353BFC-26CB-4C50-8C08-0E00D4B7859A}
 		{B0561E05-3091-4C5D-B6DD-C1F31112D244} = {0C511E5F-4E71-4956-A4F5-A59CA45B6F65}
 		{49571447-BF26-40D1-B3C7-664CF11BBEB2} = {CDD3C3E4-6376-4949-A26C-047EC4073351}
-		{1B2EF66E-525E-4EEC-9FE0-D2CD1FF9DD23} = {CC353BFC-26CB-4C50-8C08-0E00D4B7859A}
+		{1B2EF66E-525E-4EEC-9FE0-D2CD1FF9DD23} = {0C511E5F-4E71-4956-A4F5-A59CA45B6F65}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F79D890E-E009-4B4A-8043-466D3DB78F91}
